@@ -1,0 +1,7 @@
+.sideBar {
+    height: calc(100% - 60px);
+    width: 240px;
+    background: rgb(25, 25, 25);
+    position: sticky;
+    top: 0;
+}
