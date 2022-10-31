@@ -7,8 +7,25 @@
     display: flex;
     align-items: center;
     padding-left: 20px;
+    position: relative;
 }
 
-.searchBar {
-    margin: auto;
+.lrContainer {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
 }
+
+.right {
+    flex-direction: row-reverse;
+}
+
+.centerContainer {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

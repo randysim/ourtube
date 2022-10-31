@@ -14,17 +14,23 @@ export default class NavBar extends React.Component {
     render = () => {
         return (
             <div className={styles.navBar}>
-                <MenuIcon style={{ color: 'white', cursor: 'pointer', width: '30px', height: '30px' }} />
-                <TextField 
-                    className={styles.searchBar} 
-                    sx={{ input: { color: 'white' }, label: { color: 'gray'}}} 
-                    id="filled-basic" 
-                    label="Search" 
-                    variant="filled" 
-                />
-                <Link to="/login">
-                    <Button style={{ marginRight: '30px' }} variant="outlined">Login</Button>
-                </Link>
+                <div className={styles.lrContainer}>
+                    <MenuIcon style={{ color: 'white', cursor: 'pointer', width: '30px', height: '30px' }} />
+                </div>
+                <div className={styles.centerContainer}>
+                    <TextField 
+                        className={styles.searchBar} 
+                        sx={{ input: { color: 'white' }, label: { color: 'gray'}}} 
+                        id="filled-basic" 
+                        label="Search" 
+                        variant="filled" 
+                    />
+                </div>
+                <div className={`${styles.lrContainer} ${styles.right}`}>
+                    <Link to="/login">
+                        <Button className={styles.loginButton} style={{ marginRight: '30px' }} variant="outlined">Login</Button>
+                    </Link>
+                </div>
             </div>
         )
     }
